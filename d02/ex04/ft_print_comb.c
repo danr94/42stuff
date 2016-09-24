@@ -7,36 +7,34 @@ void	ft_print_comb(void)
 	char a;
 	char b;
 	char c;
-	char n;
+	char nbr[3];
 
 	a = '0';
 	b = '1';
 	c = '2';
-	n = '0';
 
-
-	while (n <= '9')
+	while (nbr[3] != (a && b && c))
 	{
-		while (a <= '9')
+
+		while (a < b)
 		{
 			ft_putchar(a);
 			a++;
 		}
 		
-		while (b <= '9')
+		while (b < c)
 		{
 			ft_putchar(b);
 			b++;
 		}
 
-		while (c <= '9')
+		while (c > a && c >= '9')
 		{
 			ft_putchar(c);
 			c++;
 		}
+		nbr[3]++;
 		
-		n++;
-	}
-	
+	}	
 }
 
