@@ -9,12 +9,12 @@ void	ft_print_comb(void)
 	char c;
 
 	a = '0';
-	b = a + 1;
-	c = b + 1;
 	while (a <= '7')
 	{
+		b = a + 1;
 		while (b <= '8')
 		{
+			c = b + 1;
 			while (c <= '9')
 			{
 				ft_putchar(a);
@@ -28,6 +28,5 @@ void	ft_print_comb(void)
 		}
 		a++;
 	}
-		
 }
 
